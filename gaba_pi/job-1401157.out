@@ -1,0 +1,29 @@
+Using gpu50
+ColabFold on Linux
+COLABFOLD_PATH is set to /nethome/yzhuang/msm/alpha_fold
+Input ID: sp|O00591|GBRP_HUMAN
+Input Sequence: MNYSLHLAFVCLSLFTERMCIQGSQFNVEVGRSDKLSLPGFENLTAGYNKFLRPNFGGEPVQIALTLDIASISSISESNMDYTATIYLRQRWMDQRLVFEGNKSFTLDARLVEFLWVPDTYIVESKKSFLHEVTVGNRLIRLFSNGTVLYALRITTTVACNMDLSKYPMDTQTCKLQLESWGYDGNDVEFTWLRGNDSVRGLEHLRLAQYTIERYFTLVTRSQQETGNYTRLVLQFELRRNVLYFILETYVPSTFLVVLSWVSFWISLDSVPARTCIGVTTVLSMTTLMIGSRTSLPNTNCFIKAIDVYLGICFSFVFGALLEYAVAHYSSLQQMAAKDRGTTKEVEEVSITNIINSSISSFKRKISFASIEISSDNVDYSDLTMKTSDKFKFVFREKMGRIVDYFTIQNPSNVDHYSKLLFPLIFMLANVFYWAYYMYF
+WARNING: For a typical Google-Colab-GPU (16G) session, the max total length is ~1400 residues. You are at 2200!
+Run Alphafold may crash, unless you trim to the protein(s) to a short length. (See trim options below).
+homooligomer: 5
+total_length: 2200
+output_dir: predict
+running mmseqs2
+  0%|          | 0/150 [elapsed: 00:00 remaining: ?]
+  0%|          | 0/5 [elapsed: 00:00 remaining: ?]
+whhhaaa... too many sequences (46055) subsampling to 13636
+model_1_seed_0 recycles:3 tol:8.12 pLDDT:66.60
+model_2_seed_0 recycles:3 tol:6.16 pLDDT:68.71
+model_3_seed_0 recycles:3 tol:8.58 pLDDT:68.90
+model_4_seed_0 recycles:3 tol:5.95 pLDDT:67.39
+model_5_seed_0 recycles:3 tol:7.01 pLDDT:66.81
+model rank based on pLDDT
+rank_1_model_3_seed_0 pLDDT:68.90
+rank_2_model_2_seed_0 pLDDT:68.71
+rank_3_model_4_seed_0 pLDDT:67.39
+rank_4_model_5_seed_0 pLDDT:66.81
+rank_5_model_1_seed_0 pLDDT:66.60
+  0%|          | 0/5 [elapsed: 00:00 remaining: ?]
+predicted contacts
+predicted distogram
+predicted LDDT

@@ -1,0 +1,26 @@
+Unloading cuda/11.1 with path /opt/tcbsys/cuda/11.1
+Loading cuda/11.1 with path /opt/tcbsys/cuda/11.1
+Using gpu42
+ColabFold on Linux
+Input ID: tr|G2FID1|G2FID1_9GAMM
+Input Sequence: MASLAAEPSDVFIGLKIDQITGINQKEENFSVVGSLRIDWRQPLLAFEHAPGEPKHRTYTLATFLKLLEEKQIRWPAFTYHNQQGRMDFQNRLISLSEDGTVMYLERFTSTFQAPAFDFRLFPFDNQLFFIHVDSIFPQHLFRFQEMQGFSGLGDQLGEEEWIVTEVNTHLTTHNEFTKGDASRFVLEFHAERHLNYYLMRILIPVLLIITVSWFTFFLQDYTKRIDLAGGNLLLFIAFNFTISSDLPRLGYITLMDAFLVGTFIITALVVLGNVWLRRLENHGKQALARKLDIYAITSYPLAYLLGALTLWLLFFWRSY
+WARNING: For a typical Google-Colab-GPU (16G) session, the max total length is ~1400 residues. You are at 1600!
+Run Alphafold may crash, unless you trim to the protein(s) to a short length. (See trim options below).
+homooligomer: 5
+total_length: 1600
+output_dir: predict_colab
+running mmseqs2
+  0%|          | 0/150 [elapsed: 00:00 remaining: ?]
+  0%|          | 0/5 [elapsed: 00:00 remaining: ?]
+model_1_seed_0 recycles:5 tol:0.29 pLDDT:81.67
+model_2_seed_0 recycles:5 tol:0.36 pLDDT:82.93
+model_3_seed_0 recycles:5 tol:0.51 pLDDT:85.16
+model_4_seed_0 recycles:5 tol:0.34 pLDDT:83.44
+model_5_seed_0 recycles:5 tol:0.51 pLDDT:85.07
+model rank based on pLDDT
+rank_1_model_3_seed_0 pLDDT:85.16
+rank_2_model_5_seed_0 pLDDT:85.07
+rank_3_model_4_seed_0 pLDDT:83.44
+rank_4_model_2_seed_0 pLDDT:82.93
+rank_5_model_1_seed_0 pLDDT:81.67
+  0%|          | 0/5 [elapsed: 00:00 remaining: ?]

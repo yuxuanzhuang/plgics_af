@@ -1,0 +1,20 @@
+/nethome/yzhuang/alphafold_project/ColabFold/beta/colabfold_alphafold.py:725: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+Traceback (most recent call last):
+  File "/nethome/yzhuang/git_repo/localcolabfold/runner_af2advanced.py", line 280, in <module>
+    relaxed_pdb_lines, _, _ = amber_relaxer.process(prot=outs[key]["unrelaxed_protein"])
+  File "/nethome/yzhuang/alphafold_project/alphafold_patch/alphafold/relax/relax.py", line 58, in process
+    out = amber_minimize.run_pipeline(
+  File "/nethome/yzhuang/alphafold_project/alphafold_patch/alphafold/relax/amber_minimize.py", line 482, in run_pipeline
+    ret.update(get_violation_metrics(prot))
+  File "/nethome/yzhuang/alphafold_project/alphafold_patch/alphafold/relax/amber_minimize.py", line 356, in get_violation_metrics
+    structural_violations, struct_metrics = find_violations(prot)
+  File "/nethome/yzhuang/alphafold_project/alphafold_patch/alphafold/relax/amber_minimize.py", line 338, in find_violations
+    violations = folding.find_structural_violations(
+  File "/nethome/yzhuang/alphafold_project/alphafold_patch/alphafold/model/folding.py", line 771, in find_structural_violations
+    restype_atom14_bounds = residue_constants.make_atom14_dists_bounds(
+  File "/nethome/yzhuang/alphafold_project/alphafold_patch/alphafold/common/residue_constants.py", line 859, in make_atom14_dists_bounds
+    residue_bonds, residue_virtual_bonds, _ = load_stereo_chemical_props()
+  File "/nethome/yzhuang/alphafold_project/alphafold_patch/alphafold/common/residue_constants.py", line 407, in load_stereo_chemical_props
+    with open(stereo_chemical_props_path, 'rt') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'alphafold/common/stereo_chemical_props.txt'
